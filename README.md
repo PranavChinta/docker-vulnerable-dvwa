@@ -51,3 +51,11 @@ You can visit DVWA [official website](http://www.dvwa.co.uk/) and official [gith
 ## Disclaimer
 
 This or previous program is for Educational purpose ONLY. Do not use it without permission. The usual disclaimer applies, especially the fact that me (opsxcq) is not liable for any damages caused by direct or indirect use of the information or functionality provided by these programs. The author or any Internet provider bears NO responsibility for content or misuse of these programs or any derivatives thereof. By using these programs you accept the fact that any damage (dataloss, system crash, system compromise, etc.) caused by the use of these programs is not opsxcq's responsibility.
+
+## Commands to transfer images into kubernetes registry
+
+docker tag dvwa-webapp:local localhost:32000/dvwa-webapp:k8s
+docker push localhost:32000/dvwa-webapp:k8s
+
+docker tag dvwa-db:local localhost:32000/dvwa-db:k8s
+docker push localhost:32000/dvwa-db:k8s
